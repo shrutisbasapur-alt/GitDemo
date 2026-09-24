@@ -37,7 +37,7 @@ stages {
             sh '''
                 docker stop jenkins-cicd-pipeline || true
                 docker rm jenkins-cicd-pipeline || true
-                docker run -d --name jenkins-cicd-pipeline -p 8080:80 jenkins-cicd-pipeline:latest
+                docker run -d --name jenkins-cicd-pipeline -p 8081:80 jenkins-cicd-pipeline:latest
             '''
         }
     }
